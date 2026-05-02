@@ -22,8 +22,4 @@ board: ["nrf52840_m2"]
 shield: ["lily58_left","lily58_right"]
 include:
   - board: nice_nano_v2
-    shield: lily58_left
-  - board: nice_nano_v2
-    shield: lily58_right
-  - board: nice_nano_v2
     shield: settings_reset
