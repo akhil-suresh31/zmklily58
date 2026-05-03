@@ -24,11 +24,8 @@ include:
 # Right and Left default
   - board: nice_nano_v2
     shield: lily58_left
-    
-    artifact-name: lily58_left_normal
   - board: nice_nano_v2
     shield: lily58_right
-    artifact-name: lily58_right_normal
 
 # Dongle
   # - board: nice_nano//zmk
