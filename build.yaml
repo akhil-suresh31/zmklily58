@@ -21,16 +21,19 @@
 # board: ["nice_nano//zmk"]
 # shield: ["lily58_left","lily58_right"]
 include:
+# Dongle
   - board: nice_nano//zmk
-    shield: lily_dongle
+    shield: lily58_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+# Re-build halves as peripherals
   - board: nice_nano//zmk
     shield: lily58_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano//zmk
     shield: lily58_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+# Settings reset firmware for all 3 devices
   - board: nice_nano//zmk
     shield: settings_reset
     
